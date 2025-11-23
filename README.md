@@ -1,9 +1,3 @@
-Great! Here’s a **clean and polished README** specifically tailored for a **JavaFX + Retrofit COVID-19 Tracker desktop application**.
-Feel free to paste it directly into your `README.md`.
-If you want it styled with badges, emojis, screenshots, or your project name added, I can enhance it further. 🚀
-
----
-
 # 🦠 COVID-19 Tracker (JavaFX + Retrofit)
 
 A modern and lightweight **desktop application** built with **JavaFX** and **Retrofit** that fetches and displays **real-time global and country-specific COVID-19 data**, along with **historical trends** and **interactive visualizations**.
