@@ -1,0 +1,23 @@
+
+.root{
+    /*    -fx-font-family:Helvetica,Verdana,'Times New Roman',sans-serif;*/
+    -fx-background-color:#fff;
+    /*  -fx-font-family:"Poppins",Verdana,'Times New Roman',sans-serif;*/
+    /*    -fx-font: 12px "Poppins";*/
+}
+.label{
+    -fx-font-family:"Poppins",Verdana,'Times New Roman',sans-serif;
+    -fx-background-color:#fff;
+        -fx-text-fill:#192135;
+}
+.jfx-button{
+    -fx-background-color:#fff;
+    -fx-text-fill:#192135;
+}
+.anchorpane,.borderpane{
+    -fx-background-color:#fff;
+}
+.ikonli-font-icon{
+    -fx-icon-color:#192135;
+}
+

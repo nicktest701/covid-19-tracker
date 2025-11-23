@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane id="AnchorPane" fx:id="mainInfo" prefHeight="670.0" prefWidth="880.0" style="-fx-background-color: #111624;" styleClass="root" stylesheets="@../resources/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.InfoController">
+   <children>
+      <Region layoutX="10.0" layoutY="20.0" prefHeight="105.0" prefWidth="870.0" style="-fx-background-color: #192135;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <effect>
+            <DropShadow color="#00000080" />
+         </effect>
+      </Region>
+      <Label graphicTextGap="12.0" layoutX="42.0" layoutY="20.0" prefHeight="63.0" prefWidth="337.0" text="Information" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <graphic>
+            <FontIcon iconColor="WHITE" iconLiteral="gmi-accessibility" iconSize="35" />
+         </graphic>
+      </Label>
+      <Label layoutX="42.0" layoutY="79.0" text="Information about Coronavirus" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="75.0" layoutY="150.0" prefHeight="450.0" prefWidth="753.0" styleClass="main-info" stylesheets="@../resources/css/main.css" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane prefWidth="780.0" style="-fx-background-color: #111624;">
+               <children>
+                  <Accordion maxHeight="660.0" prefHeight="660.0" prefWidth="676.0" stylesheets="@../resources/css/main.css">
+                    <panes>
+                      <TitledPane contentDisplay="RIGHT" text="What is Coronavirus?" textAlignment="JUSTIFY" wrapText="true">
+                        <content>
+                          <AnchorPane maxHeight="500.0" minHeight="150.0" minWidth="0.0" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #111624;" styleClass="accordion-container" stylesheets="@../resources/css/main.css">
+                                 <children>
+                                    <TextArea prefHeight="122.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;Stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow or tissue.&#10; Check local advice where you live and work. Do it all!" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                      </TitledPane>
+                      <TitledPane animated="false" contentDisplay="RIGHT" maxWidth="728.0" prefHeight="432.0" prefWidth="728.0" text="What are the symptoms of COVID-19?">
+                        <content>
+                          <AnchorPane maxWidth="765.0" minHeight="385.0" minWidth="564.0" prefHeight="385.0" prefWidth="765.0" style="-fx-background-color: #111624;" styleClass="accordion-container" stylesheets="@../resources/css/main.css">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;The most common symptoms of COVID-19 are&#10;&#10;•&#9;Fever&#10;•&#9;Dry cough&#10;•&#9;Fatigue&#10;&#10;Other symptoms that are less common and may affect some patients include:&#10;&#10;•&#9;Loss of taste or smell,&#10;•&#9;Nasal congestion,&#10;•&#9;Conjunctivitis (also known as red eyes)&#10;•&#9;Sore throat,&#10;•&#9;Headache,&#10;•&#9;Muscle or joint pain,&#10;•&#9;Different types of skin rash,&#10;•&#9;Nausea or vomiting,&#10;•&#9;Diarrhea,&#10;•&#9;Chills or dizziness.&#10;&#10;Symptoms are usually mild. Some people become infected but only have very mild symptoms or none at all.&#10;&#10;Symptoms of severe COVID‐19 disease include:&#10;&#10;•&#9;Shortness of breath,&#10;•&#9;Loss of appetite,&#10;•&#9;Confusion,&#10;•&#9;Persistent pain or pressure in the chest,&#10;•&#9;High temperature (above 38 °C).&#10;&#10;Other less common symptoms are:&#10;&#10;•&#9;Irritability,&#10;•&#9;Confusion,&#10;•&#9;Reduced consciousness (sometimes associated with seizures),&#10;•&#9;Anxiety,&#10;•&#9;Depression,&#10;•&#9;Sleep disorders,&#10;•&#9;More severe and rare neurological complications such as strokes, brain inflammation, delirium and nerve damage.&#10;&#10;People of all ages who experience fever and/or cough associated with difficulty breathing or shortness of breath, chest pain or pressure, or loss of speech or movement should seek medical care immediately. If possible, call your health care provider, hotline or health facility first, so you can be directed to the right clinic.&#10;&#10;&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="57.0" prefHeight="413.0" prefWidth="676.0" text="What happens to people who get seriously ill?">
+                           <content>
+                              <AnchorPane minHeight="280.0" minWidth="0.0" prefHeight="358.0" prefWidth="674.0" style="-fx-background-color: #111624;" styleClass="accordion-container" stylesheets="@../resources/css/main.css">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="242.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;Most people (about 80%) recover from the disease without needing hospital treatment. About 20% of those who get COVID-19 become seriously ill and require oxygen, with 5% becoming critically ill and needing intensive care.&#10;&#10;Complications leading to death may include respiratory failure, acute respiratory distress syndrome (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the heart, liver or kidneys.&#10;&#10;In rare situations, children can develop a severe inflammatory syndrome a few weeks after infection&#10;&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="102.0" prefHeight="297.0" prefWidth="750.0" text="Who is most at risk of severe illness from COVID-19?">
+                           <content>
+                              <AnchorPane minHeight="202.0" minWidth="0.0" prefHeight="202.0" prefWidth="748.0" style="-fx-background-color: #111624;" styleClass="accordion-container" stylesheets="@../resources/css/main.css">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="148.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;People aged 60 and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness. &#10;&#10;However, anyone can get sick with COVID-19 and become seriously ill or die at any age. &#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="428.0" prefHeight="209.0" prefWidth="750.0" text="How can we protect others and ourselves if we don't know who is infected?">
+                           <content>
+                              <AnchorPane minHeight="156.0" minWidth="0.0" prefHeight="156.0" prefWidth="748.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="122.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;Stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow or tissue.&#10; Check local advice where you live and work. Do it all!" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="473.0" text="When should I get a test for COVID-19?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="219.0" prefWidth="896.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="195.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;Anyone with symptoms should be tested, wherever possible. People who do not have symptoms but have had close contact with someone who is, or may be, infected may also consider testing – check with your local health guidelines.&#10;&#10; While a person is waiting for test results, they should remain isolated from others. Where testing capacity is limited, tests should first be done for those at higher risk of infection, such as health workers, and those at higher risk of severe illness such as older people, especially those living in seniors’ residences or long-term care facilities." wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="237.0" text="What is the difference between isolation and quarantine?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="219.0" prefWidth="896.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="168.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;Both isolation and quarantine are methods of preventing the spread of the disease.&#10;&#10;Quarantine means restricting activities and/or separating people who are not ill but may have been exposed to COVID-19.The quarantine can take place in a designated facility or at home for 14 days.&#10;&#10;Isolation means separating people who are ill with symptoms of COVID-19 and/or have tested positive.&#10;&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="502.0" text="What should I do if I have been exposed to someone who has COVID-19?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="219.0" prefWidth="896.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="195.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;If you have been exposed to someone with COVID-19, you may become infected, even if you feel well.&#10;After exposure to someone who has COVID-19, do the following:&#10;&#10;•&#9;Call your health care provider or COVID-19 hotline to find out where and when to get a test.&#10;•&#9;Cooperate with contact-tracing procedures to stop the spread of the virus.&#10;•&#9;If testing is not available, stay home and away from others for 14 days.&#10;•&#9;During this time, do not go to work, to school or to public places. Ask someone to bring you supplies.&#10;•&#9;Keep at least a 1-metre distance from others, even from your family members.&#10;•&#9;Wear a medical mask to protect others, including if/when you need to seek medical care.&#10;•&#9;Clean your hands frequently.&#10;•&#9;Stay in a separate room from other family members, and if not possible, wear a medical mask.&#10;•&#9;Keep the room well-ventilated.&#10;•&#9;If you share a room, place beds at least 1 metre apart.&#10;•&#9;Monitor yourself for any symptoms for 14 days. &#10;•&#9;Stay positive by keeping in touch with loved ones by phone or online, and by exercising at home.&#10;&#10;If you live in an area with malaria or dengue fever, seek medical help if you have a fever. While travelling to and from the health facility and during medical care, wear a mask, keep at least a 1-metre distance from other people and avoid touching surfaces with your hands. This applies to adults and children.&#10;&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="547.0" text="How long does it take to develop symptoms?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="219.0" prefWidth="896.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="195.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;The time from exposure to COVID-19 to the moment when symptoms begin is, on average, 5-6 days and can range from 1-14 days. &#10;This is why people who have been exposed to the virus are advised to stay home, apart from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available." wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="592.0" text="What should I do if I have COVID-19 symptoms?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="219.0" prefWidth="896.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="195.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;If you have any symptoms suggestive of COVID-19, contact your health care provider or COVID-19 hotline for instructions and find out when and where to get a test, stay at home for 14 days away from others and monitor your health.&#10;If you have shortness of breath or pain or pressure in the chest, seek medical attention immediately. Call your health care provider or hotline in advance for direction to the right health facility.&#10;If you live in an area with malaria or dengue fever, seek medical care if you have a fever.&#10;If local guidance recommends visiting a medical centre for testing, assessment or isolation, wear a medical mask while travelling to and from the facility and during medical care. Also keep at least a 1-metre distance from other people and avoid touching surfaces with your hands.  This applies to adults and children.&#10;&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="637.0" text="Is there a vaccine for COVID-19?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="219.0" prefWidth="896.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="195.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="&#10;Not yet. Many potential vaccines for COVID-19 are being studied, and several large clinical trials may report results later this year. If a vaccine is proven safe and effective, it must be approved by national regulators, manufactured, and distributed. WHO is working with partners around the world to help coordinate key steps in this process. WHO is working through the ACT-Accelerator to facilitate equitable access to a safe and effective vaccine for the billions of people who will need it, once it is available. More information about COVID-19 vaccine development is available here.&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="682.0" text="Are there treatments for COVID-19?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="219.0" prefWidth="896.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="195.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="Scientists around the world are working to find and develop treatments for COVID-19.&#10;Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill.&#10;Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness. Read our dexamethasone Q&amp;A for more information.&#10;Results from the WHO’s Solidarity Trial indicated that remdesivir, hydroxychloroquine, lopinavir/ritonavir and interferon regimens appeared to have little or no effect on 28-day mortality or the in-hospital course of COVID-19 among hospitalized patients.&#10;Hydroxychloroquine has not been shown to offer any benefit for treatment of COVID-19. Read our hydroxychloroquine Q&amp;A for more information.&#10;WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. WHO is coordinating efforts to develop treatments for COVID-19 and will continue to provide new information as it becomes available.&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" contentDisplay="RIGHT" layoutX="10.0" layoutY="507.0" text="Are antibiotics effective in preventing or treating COVID-19?">
+                           <content>
+                              <AnchorPane minHeight="219.0" minWidth="0.0" prefHeight="258.0" prefWidth="674.0" style="-fx-background-color: #111624;">
+                                 <children>
+                                    <TextArea layoutX="5.0" layoutY="10.0" prefHeight="195.0" prefWidth="700.0" style="-fx-background-color: #111624;" styleClass="text-area" stylesheets="@../resources/css/main.css" text="Antibiotics do not work against viruses; they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19.&#10;In hospitals, physicians will sometimes use antibiotics to prevent or treat secondary bacterial infections which can be a complication of COVID-19 in severely ill patients. They should only be used as directed by a physician to treat a bacterial infection.&#10;&#10;" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="79.0" fitWidth="140.0" layoutX="709.0" layoutY="33.0" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/back1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

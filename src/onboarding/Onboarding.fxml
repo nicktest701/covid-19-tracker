@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane fx:id="mainOnboarding" prefHeight="490.0" prefWidth="800.0" stylesheets="@../resources/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="onboarding.OnboardingController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="660.0" style="-fx-background-color: #111624;">
+         <children>
+            <JFXButton fx:id="btnNext" alignment="CENTER" contentDisplay="CENTER" layoutX="719.0" layoutY="426.0" onMouseClicked="#Move_To_Next_Board" prefHeight="40.0" prefWidth="40.0" ripplerFill="#11162400" style="-fx-background-color: transparent;" text=" " textFill="TRANSPARENT" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <graphic>
+                  <FontIcon fill="WHITE" iconColor="WHITE" iconLiteral="fa-angle-right" iconSize="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnPrevious" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="426.0" onMouseClicked="#Move_To_Previous_Board" prefHeight="40.0" prefWidth="40.0" ripplerFill="#11162463" text=" " AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+               <graphic>
+                  <FontIcon fill="WHITE" iconColor="WHITE" iconLiteral="fa-angle-left" iconSize="30" />
+               </graphic>
+            </JFXButton>
+            <Pane fx:id="paneOnboardGetStarted" layoutX="155.0" layoutY="28.0" prefHeight="412.0" prefWidth="491.0" style="-fx-background-color: #111624;" visible="false">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="203.0" layoutX="144.0" layoutY="44.0" opacity="0.8" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/covid.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="155.0" layoutY="270.0" text="Covid-19 is real. Protect yourself !!" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnGetStarted" layoutX="133.0" layoutY="335.0" onMouseClicked="#Open_Home_Page" prefHeight="50.0" prefWidth="224.0" style="-fx-background-color: #01baef; -fx-background-radius: 0;" text="Get Started" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="paneOnboard3" layoutX="155.0" layoutY="28.0" prefHeight="412.0" prefWidth="491.0" style="-fx-background-color: #111624;" visible="false">
+               <children>
+                  <ImageView fitHeight="214.0" fitWidth="159.0" layoutX="212.0" layoutY="50.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/woman.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="126.0" layoutY="296.0" text="CONSULT YOUR DOCTOR" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="331.0" prefHeight="50.0" prefWidth="323.0" text="In case of fever,difficult breathing and cough,consult the doctor immediately" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="paneOnboard2" layoutX="155.0" layoutY="28.0" prefHeight="412.0" prefWidth="491.0" style="-fx-background-color: #111624;" visible="false">
+               <children>
+                  <ImageView fitHeight="97.0" fitWidth="111.0" layoutX="157.0" layoutY="158.0" opacity="0.8" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/washing.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="176.0" layoutY="290.0" text="WASH HANDS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="336.0" prefHeight="33.0" prefWidth="362.0" text="Wash your hands with soap and water or use a hand sanitizer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="97.0" fitWidth="66.0" layoutX="266.0" layoutY="158.0" opacity="0.8">
+                     <image>
+                        <Image url="@../resources/images/sanitizer.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="paneOnboard1" layoutX="155.0" layoutY="28.0" prefHeight="412.0" prefWidth="491.0" style="-fx-background-color: #111624;">
+               <children>
+                  <ImageView fitHeight="172.0" fitWidth="161.0" layoutX="177.0" layoutY="75.0" opacity="0.61" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/bust-mask-13.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="119.0" layoutY="284.0" text="COVER NOSE AND MOUTH" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="329.0" prefHeight="50.0" prefWidth="323.0" text="Cover nose and mouth when coughing,sneezing, and when going outside " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="620.0" onMouseClicked="#Close_Onboarding" ripplerFill="BLACK" styleClass="btn-close" stylesheets="@../resources/css/main.css" text=" " AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+               <graphic>
+                  <FontIcon iconColor="WHITE" iconLiteral="gmi-close" iconSize="25" styleClass="icon-close" />
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="8.0" layoutY="6.0">
+               <image>
+                  <Image url="@../resources/images/icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</StackPane>

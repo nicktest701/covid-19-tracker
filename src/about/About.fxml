@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="880.0" style="-fx-background-color: #111624;" stylesheets="@../resources/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="about.AboutController">
+   <children>
+      <Label graphicTextGap="12.0" layoutX="40.0" layoutY="27.0" prefHeight="63.0" prefWidth="337.0" text="About" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="79.0" fitWidth="140.0" layoutX="716.0" layoutY="27.0" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/back2.png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="40.0" layoutY="163.0" minWidth="800.0" prefHeight="477.0" prefWidth="800.0" text="&#10;Product Version&#10;Corona Tracker 1.0.0&#10;&#10;Build Information&#10;Version 1.0.0&#10;Date: 2020-07-02&#10;&#10;This Cororna Tracker app is a software from Frebby Tech Consults, which has been dual licensed under the Common&#10; Development and Distribution License (CDDL) and the GNU General Public License. For more information, please visit&#10; www.frebbytechconsults.org&#10;&#10;Logging&#10;The default configuration stores logging output in a file named coronatracker.log (possibly followed by a trailing '.' and a digit).&#10;The default file path is C:\Users\NANAAK~1\AppData\Local\Temp\coronatracker.log&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;Copyright © 2020 Frebby Tech Consults. and/or its affiliates. All rights reserved&#10;" />
+      <Label contentDisplay="TOP" layoutX="670.0" layoutY="499.0" prefHeight="92.0" prefWidth="152.0" text="Frebby-Tech Consults" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="102.0">
+               <image>
+                  <Image url="@../resources/images/Asset%205@300x-8.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

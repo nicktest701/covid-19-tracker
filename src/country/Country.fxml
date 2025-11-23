@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="880.0" style="-fx-background-color: #111624;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="country.CountryController">
+   <children>
+      <Region layoutX="42.0" layoutY="33.0" prefHeight="105.0" prefWidth="870.0" style="-fx-background-color: #192135;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <effect>
+            <DropShadow color="#00000080" />
+         </effect>
+      </Region>
+      <Label graphicTextGap="12.0" layoutX="39.0" layoutY="40.0" prefHeight="63.0" prefWidth="234.0" text="Country" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <graphic>
+            <FontIcon iconColor="WHITE" iconLiteral="fa-globe" iconSize="35" />
+         </graphic>
+      </Label>
+      <TableView fx:id="tableCountry" editable="true" layoutX="42.0" layoutY="168.0" prefHeight="462.0" prefWidth="840.0" stylesheets="@../resources/css/main.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="168.0">
+        <columns>
+          <TableColumn fx:id="colCountry" prefWidth="161.0" resizable="false" text="Country" />
+          <TableColumn fx:id="colCases" prefWidth="61.0" text="Cases" />
+            <TableColumn fx:id="colDeaths" prefWidth="104.0" resizable="false" text="Deaths" />
+            <TableColumn fx:id="colRecovered" prefWidth="138.0" text="Recovered" />
+            <TableColumn fx:id="colActive" prefWidth="75.0" text="Active" />
+            <TableColumn fx:id="colViewMore" prefWidth="120.0" text="View" />
+        </columns>
+         <effect>
+            <DropShadow color="#00000081" />
+         </effect>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="txtSearchForCountry" layoutX="500.0" layoutY="40.0" onKeyReleased="#Search_For_Country" prefHeight="35.0" prefWidth="347.0" promptText="Search Country..." style="-fx-background-radius: 30;">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </TextField>
+      <FontIcon iconLiteral="gmi-search" iconSize="20" layoutX="817.0" layoutY="68.0" />
+      <Label layoutX="585.0" layoutY="94.0" text="Last Updated on :" textFill="#727272" />
+      <JFXButton fx:id="btnRefresh" buttonType="RAISED" graphicTextGap="5.0" layoutX="500.0" layoutY="88.0" onMouseClicked="#Refresh_Data" style="-fx-background-radius: 0;" text="refresh" textFill="WHITE">
+         <graphic>
+            <FontIcon fx:id="iconRefresh" iconColor="WHITE" iconLiteral="gmi-refresh" iconSize="22" />
+         </graphic>
+      </JFXButton>
+      <Label fx:id="lblDate" layoutX="686.0" layoutY="97.0" prefHeight="17.0" prefWidth="158.0" textFill="#3ebfe7" />
+      <ImageView fx:id="imgTableBack" fitHeight="200.0" fitWidth="323.0" layoutX="283.0" layoutY="421.0" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/images/back2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="97.0" text="List of affected countries around the world" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
